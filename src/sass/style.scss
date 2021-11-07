@@ -1,8 +1,12 @@
 @import 'base/variables';
 @import 'blocks/promo';
 @import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/advantages';
 
 .container{
     max-width: 950px;
     margin: 0 auto;
 }
+
+@import 'blocks/media';
