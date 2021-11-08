@@ -6,13 +6,15 @@
         font-size: 13px;
     }
     .consultation {
-        &__descr {
-            font-size: 10px;
-        }
         .title {
             &_left {
                 font-size: 33px;
+                line-height: 45px;
             }
+        }
+        &__descr {
+            font-size: 18px;
+            line-height: 27px;
         }
     }
 }
@@ -84,6 +86,31 @@
             margin: 30px 0 16px 0;
             font-size: 17px;
             line-height: 17px;
+        }
+    }
+    .consultation {
+        padding-top: 80px;
+        min-height: 579px;
+        .title {
+            &_left {
+                font-size: 23px;
+                line-height: 34px;
+            }
+        }
+        &__descr {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .feed-form {
+            width: 280px;
+            .button {
+                &_submit {
+                    width: 100%;
+                    height: 50px;
+                    color: #ffffff;
+                    font-size: 16px;
+                }
+            }
         }
     }
 }
@@ -163,6 +190,38 @@
             margin: 22px 0 16px 0;
             font-size: 15px;
             line-height: 15px;
+        }
+    }
+    .consultation {
+        padding: 60px 0 70px 0;
+        min-height: 506px;
+        .title {
+            &_left {
+                font-size: 22px;
+                line-height: 30px;
+            }
+        }
+        &__descr {
+            font-size: 15px;
+            line-height: 20px;
+        }
+        .feed-form {
+            margin-top: 30px;
+            width: 235px;
+            input {
+                height: 45px;
+                margin-bottom: 12px;
+                padding: 0 15px;
+                font-size: 13px;
+            }
+            .button {
+                &_submit {
+                    width: 100%;
+                    height: 45px;
+                    color: #ffffff;
+                    font-size: 13px;
+                }
+            }
         }
     }
 }
@@ -249,6 +308,39 @@
             margin: 15px 0 13px 0;
             font-size: 15px;
             line-height: 15px;
+        }
+    }
+    .consultation {
+        padding: 40px 0 50px 0;
+        min-height: 416px;
+        .title {
+            &_left {
+                font-size: 13px;
+                line-height: 20px;
+            }
+        }
+        &__descr {
+            font-size: 13px;
+            line-height: 20px;
+        }
+        .feed-form {
+            margin: 0 auto;
+            margin-top: 22px;
+            width: 195px;
+            input {
+                height: 45px;
+                margin-bottom: 12px;
+                padding: 0 12px;
+                font-size: 12px;
+            }
+            .button {
+                &_submit {
+                    width: 100%;
+                    height: 45px;
+                    color: #ffffff;
+                    font-size: 12px;
+                }
+            }
         }
     }
 }
