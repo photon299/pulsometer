@@ -1,5 +1,6 @@
 .carousel {
     padding: 81px 0;
+    min-height: 690px;
     &__inner {
         position: relative;
         width: 750px;
@@ -9,7 +10,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        left: -66px;
+        left: -66px; //-66%
         border: none;
         background-color: #fff;
         img {
@@ -18,7 +19,7 @@
         }
     }
     .slick-next {
-        right: -66px;
+        right: -66px; // -66%
         left: auto;
     }
 }

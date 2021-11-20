@@ -8,9 +8,16 @@ $(document).ready(function(){
             {
                 breakpoint: 992,
                 settings: {
-                  dots: true,
-                  arrows: false
+                  dots: false,
+                  arrows: true // arrows: false
                 }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                dots: false,
+                arrows: false
+              }
             }   
         ]
       });
@@ -34,5 +41,22 @@ $(document).ready(function(){
 
       toggleSlide('.catalog-item__link');
       toggleSlide('.catalog-item__back');
-      
+
+      // MODAL 
+
+      $('[data-modal="consultation"]').on('click', function() {
+        $('.overlay, #consultation').fadeIn('slow');
+      });
+
+      $('.modal__close, .overlay').on('click', function() {
+        $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
+      });
+
+      $('.button_mini').each(function(i) {
+        $(this).on('click', function() {
+          $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+          $('.overlay, #order').fadeIn('slow');
+        })
+      });
+
   });
